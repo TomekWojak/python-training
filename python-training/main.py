@@ -24,3 +24,25 @@ def evenCounter():
     print(f'Parzyste: {even_count} \nNieparzyste: {odd_count}')
 
 evenCounter()
+
+# products shop
+
+def makeShopping():
+    products = {"jabłko": 2.5, "banan": 3.2, "chleb": 5.0, "mleko": 4.5}
+    total = 0
+
+    while True:
+        product = input('Podaj produkt (lub wpisz "koniec"): ')
+        
+        if product == "koniec":
+            break
+        elif product in products:
+            total += products[product]
+        else:
+            print("Nie ma takiego produktu!")
+
+    print(f'Suma zakupów: {total} zł')
+
+makeShopping()
+
+
