@@ -66,5 +66,29 @@ def classifyStudents():
 
 classifyStudents()
 
+def miniCalc():
+    a = int(input('Podaj liczbę: '))
+    b = int(input('Podaj drugą liczbę: '))
+    operator = input('Podaj operator: ')
+
+    if(operator != "+" and operator != "-" and operator != "/" and operator != "*"):
+        print(f'{operator} jest nieprawidłowym operatorem!')
+        return
+    
+    if(operator == "+"):
+        result = a + b
+    elif(operator == "-"):
+        result = a - b
+    elif(operator == "/"):
+        if b == 0:
+            print("Nie można dzielić przez 0!")
+            return
+        result = a / b
+    elif(operator == '*'):
+        result = a * b
+    
+    print(f'Wynik działania {a} {operator} {b} to: {result}')
 
 
+
+miniCalc()
