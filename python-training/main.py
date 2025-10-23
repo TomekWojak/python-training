@@ -46,16 +46,25 @@ def makeShopping():
 # makeShopping()
 
 # average grade
+grades = {"Ala": 5, "Bartek": 4, "Celina": 3, "Dawid": 5, "Ewa": 2}
+
+
 def calculateTheAverage():
-    grades = {"Ala": 5, "Bartek": 4, "Celina": 3, "Dawid": 5, "Ewa": 2}
-    counter = 0
+    return sum(grades.values()) / len(grades)
+
+
+def classifyStudents():
+    average = calculateTheAverage()
 
     for name, grade in grades.items():
-        counter += grade  
+        if(grade > average):
+            print(f'Powyżej średniej: {name}')
+        elif(grade < average):
+            print(f'Poniżej średniej: {name}')
+        else:
+            print(f'Równo ze średnią: {name}')
 
-    average = counter / len(grades)
-    
-    return average
-    
-    
+classifyStudents()
+
+
 
