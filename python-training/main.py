@@ -43,6 +43,19 @@ def makeShopping():
 
     print(f'Suma zakupów: {total} zł')
 
-makeShopping()
+# makeShopping()
 
+# average grade
+def calculateTheAverage():
+    grades = {"Ala": 5, "Bartek": 4, "Celina": 3, "Dawid": 5, "Ewa": 2}
+    counter = 0
+
+    for name, grade in grades.items():
+        counter += grade  
+
+    average = counter / len(grades)
+    
+    return average
+    
+    
 
