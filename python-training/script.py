@@ -1,6 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
-x = [1, 2, 3, 4, 5]
-y = [2, 4, 6, 8, 10]
-plt.plot(x, y)
+kategorie = ['A', 'B', 'C', 'D']
+udzial = [30, 20, 25, 25]
+plt.pie(udzial, labels=kategorie,
+autopct='%1.f%%', startangle=90,
+colors=['skyblue', 'lightgreen',
+'lightcoral', 'gold'])
+plt.title('Udział w kategoriach')
 plt.show()
