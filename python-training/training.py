@@ -1,7 +1,10 @@
-def silnia(n):
- wynik = 1
- for i in range(1, n + 1):
-     wynik *= i
- return wynik
+temps = [10,0,-3,-5,15,21,-20,-50]
+ujemne = []
 
-print(silnia(5))
+def test():
+    for i in temps:
+            if i < 0:
+                ujemne.append(i)
+
+test()
+print(ujemne)
