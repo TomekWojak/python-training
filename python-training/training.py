@@ -1,6 +1,10 @@
-x = int(input('Podaj liczbę: '))
-if x >= 10 and x <= 20:
- print('w przedziale')
-else:
- print('poza przedziałem'
-)
+def test():
+    licznik = 0
+    while True:
+        x = int(input('Podaj liczbę: '))
+        print('wpisana liczba', x)
+        if(x > 0): licznik += 1
+        if(x == 0): break
+    print(licznik)
+
+test()
