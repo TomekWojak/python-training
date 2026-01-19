@@ -1,10 +1,10 @@
-oceny = [1,2,3,4,5]
+L = [1,2,3,4,50,10,23,20,22,303,51,65]
+
 def test():
-    minimum = oceny[0]
-    for x in oceny:
-        if x < minimum:
-            minimum = x
+    licznik = 0
+    for x in L:
+        if x > 10:
+            licznik += 1
 
-    return  minimum
-
+    return licznik
 print(test())
