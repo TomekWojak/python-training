@@ -1,8 +1,9 @@
-def test(text):
-    text2 = text[::-1]
+def zliczLitery(tekst):
+    slownikLiter = {}
+    for litera in tekst:
+        if(litera in slownikLiter):
+            slownikLiter[litera] += 1
+        else:
+            slownikLiter[litera] = 1
+    print(slownikLiter)
 
-    if(text2.lower() == text.lower()):
-        print(f'{text} jest palindromem')
-    else:
-        print(f'{text} nie jest palindromem')
-test('KamilSlimak')
