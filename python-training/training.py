@@ -1,5 +1,8 @@
-lista = [(1,2),(3,4),(5,6)]
-suma = 0
-for x,y in lista:
-    suma += y
-print(suma)
+def test(text):
+    text2 = text[::-1]
+
+    if(text2.lower() == text.lower()):
+        print(f'{text} jest palindromem')
+    else:
+        print(f'{text} nie jest palindromem')
+test('KamilSlimak')
